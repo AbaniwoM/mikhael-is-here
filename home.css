@@ -78,6 +78,8 @@ body {
     margin-top: 150px;
     height: 600px;
     margin-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
 } 
 
 #boxes:after {
@@ -153,7 +155,6 @@ body {
 
 #clients .speech {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     justify-content: center;
@@ -351,7 +352,7 @@ body {
 }
 
 /* responsiveness */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
     }
@@ -371,9 +372,9 @@ body {
     }
 
     #boxes {
-        margin-left: 30px;
-        width: 80%;
-        align-content: center;
+        margin-left: 0px;
+        width: 100%;
+       
     }
 
     #boxes h2 {
@@ -417,9 +418,13 @@ body {
         text-align: center;
     }
 
+    #testimonies h2 {
+        padding: 120px;
+    }
+
     #testimonies {
-        margin-left: 30px;
-        width: 80%;
+        margin-left: 20px;
+        width: 75%;
     }
 
     #testimonies p {
@@ -428,7 +433,7 @@ body {
     
     #background-video .txt {
       font-size: 11px;
-      width: 90%;
+      width: 87%;
     } 
     
     #background-video iframe {
